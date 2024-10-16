@@ -1,11 +1,11 @@
-#ifndef __BULLE_SORT_H__
-#define __BULLE_SORT_H__
+#ifndef __BUBBLE_SORT_H__
+#define __BUBBLE_SORT_H__
 
-class BulleSort
+class BubbleSort
 {
 public:
-    BulleSort();
-    ~BulleSort();
+    BubbleSort();
+    ~BubbleSort();
     void sort(int* arr,int len);
 private:
     void swap(int* arr,int i,int j);

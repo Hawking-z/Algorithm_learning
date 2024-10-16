@@ -1,7 +1,7 @@
 # 定义源文件列表
 set(SOURCES
     SelectSort.cpp
-    BulleSort.cpp
+    BubbleSort.cpp
     OddFind.cpp
     dichotomy.cpp
 )

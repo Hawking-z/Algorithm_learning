@@ -1,14 +1,14 @@
-#include "BulleSort.h"
+#include "BubbleSort.h"
 
-BulleSort::BulleSort()
+BubbleSort::BubbleSort()
 {
 }
 
-BulleSort::~BulleSort()
+BubbleSort::~BubbleSort()
 {
 }
 
-void BulleSort::sort(int *arr, int len)
+void BubbleSort::sort(int *arr, int len)
 {
     if(arr == nullptr || len <2)
         return;
@@ -25,7 +25,7 @@ void BulleSort::sort(int *arr, int len)
 
 }
 
-void BulleSort::swap(int *arr, int i, int j)
+void BubbleSort::swap(int *arr, int i, int j)
 {
     int temp = arr[i];
     arr[i] = arr[j];

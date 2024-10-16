@@ -1,7 +1,7 @@
 #include<iostream>
 #include "common.h"
 #include "SelectSort.h"
-#include "BulleSort.h"
+#include "BubbleSort.h"
 #include "InsertSort.cpp"
 #include "dichotomy.h"
 
@@ -38,7 +38,7 @@ int main()
     print_arr(arr,ARR_LEN);
     copy(begin(temp),end(temp),begin(arr));
 
-    BulleSort bulle_sort;
+    BubbleSort bulle_sort;
     bulle_sort.sort(arr,ARR_LEN);
     cout<<"冒泡排序后:"<<endl;
     print_arr(arr,ARR_LEN);
