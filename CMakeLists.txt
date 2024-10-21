@@ -14,7 +14,9 @@ add_subdirectory(second_class)
 
 add_executable(sort_test src/sort_test.cpp)
 add_executable(odd_find src/odd_find_test.cpp)
+add_executable(small_sum src/small_sum_test.cpp)
 
 
 target_link_libraries(sort_test first_class second_class)
 target_link_libraries(odd_find first_class)
+target_link_libraries(small_sum second_class)

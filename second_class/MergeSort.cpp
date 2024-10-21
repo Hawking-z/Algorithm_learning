@@ -3,34 +3,16 @@
 #include <iostream>
 using namespace std;
 
-void printf_arr(int *arr,int L,int R)
-{
-    for(int i = L;i<=R;i++)
-    {
-        cout<< arr[i]<<" ";
-    }
-    cout<<endl;
-}
-void printf_arr(vector<int> vec)
-{
-    for(auto iter = vec.begin();iter != vec.end();iter++)
-    {
-        cout<< *iter <<" ";
-    }
-    cout<<endl;
-}
 
 void merge(int arr[],int L,int middle,int R)
-{
+{   
+
     vector<int> temp;
     
     temp.reserve(R-L+1);
     int p_left = L;
     int p_right = middle+1;
-    cout<<"左半部分:"<<endl;
-    printf_arr(arr,L,middle);
-    cout<<"右半部分:"<<endl;
-    printf_arr(arr,middle+1,R);
+    
     while(p_left<=middle && p_right <= R)
     {
         temp.push_back(arr[p_left]< arr[p_right]? arr[p_left++]:arr[p_right++]);
@@ -46,16 +28,9 @@ void merge(int arr[],int L,int middle,int R)
     
     for(int i = L;i<=R;i++)
     {
-        arr[i] = temp[i];
+        arr[i] = temp[i-L];
     }
-
-    cout<<"合并的temp:"<<endl;
-    printf_arr(temp);
-    cout<<"赋值:"<<endl;
-    printf_arr(arr,L,R);
 }
-
-
 
 void merge_sort(int arr[], int L,int R)
 {

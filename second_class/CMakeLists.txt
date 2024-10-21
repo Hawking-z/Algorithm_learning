@@ -2,6 +2,7 @@
 set(SOURCES
     MergeSort.cpp
     RecurisonMax.cpp
+    SmallSum.cpp
 )
 
 # 创建一个可执行文件或库
