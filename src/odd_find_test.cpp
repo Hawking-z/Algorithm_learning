@@ -3,10 +3,6 @@
 #include"common.h"
 using namespace std;
 
-void test_arr_gen(int*arr,int len)
-{
-
-}
 
 int main()
 {
